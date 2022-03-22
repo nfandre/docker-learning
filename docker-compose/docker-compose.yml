@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  web:
+    image: centos
+    container_name: centos_cmd
+    command: python -m SimpleHTTPServer
+

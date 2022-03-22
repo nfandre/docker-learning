@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    container_name: mysql_compose
+    ports:
+      - "3306:3306"
+    env_file: env_file.txt
+    environment:
+      - MYSQL_ROOT_PASSWORD=12345
+      - SHOW=true
+    volumes:
+      - "/Users/andrenascimentodefreitas/Desktop/docker-course/docker-compose/mysql_data:/var/lib/mysql"
+
+
